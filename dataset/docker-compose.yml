@@ -20,7 +20,7 @@ services:
         - SETUP_CUSTOMER
 
   dataset_node_backend:
-    image: layernextai/dataset_node_backend:1.0.17.2
+    image: layernextai/dataset_node_backend_trial:1.0.17.2
     restart: always
     ports:
       - "4000:4000"

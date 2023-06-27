@@ -26,7 +26,7 @@ services:
               memory: ${MEMORY_LIMIT}
 
   datalake_node_backend:
-    image: layernextai/datalake_node_backend:1.0.17.2
+    image: layernextai/datalake_node_backend_trial:1.0.17.2
     restart: always
     ports:
       - "3000:3000"

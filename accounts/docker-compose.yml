@@ -22,7 +22,7 @@ services:
         - ADMIN_PASSWORD
 
   sso_node_backend:
-    image: layernextai/sso_node_backend:1.0.17.2
+    image: layernextai/sso_node_backend_trial:1.0.17.2
     restart: always
     ports:
       - "8888:8888"
