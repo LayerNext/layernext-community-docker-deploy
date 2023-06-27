@@ -54,7 +54,7 @@ db.getCollection('User').insert({
 //insert default user credentials
 db.getCollection('AppUserCredentials').insert({
   "_id": ObjectId("6374c597cb468b7a7a68a118"),
-  "password": process.env.ADMIN_PASSWORD,
+  "password": _getEnv('ADMIN_PASSWORD'),
   "userId": ObjectId("6374c47ecb468b7a7a68a117"),
   "annotationUserId": ObjectId("6374c47ecb468b7a7a68a117")
 })
