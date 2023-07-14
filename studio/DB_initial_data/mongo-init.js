@@ -544,9 +544,3 @@ db.getCollection('AnnotationUser').insert({
     "isUserDeactivated": false,
     "teamId": ObjectId("6374c3decb468b7a7a68a116")
 })
-db.getCollection('AnnotationUserCredentials').insert({
-    "_id" : "d6263763-f6a2-438a-bc16-caa21facb4dd",
-    "password" : "$2a$10$6HlNYJ.du2gt1c.WRiW3A.FD6vuAqESv2k9tUD0zAeaMG2fW.3P2K",
-    "userId": ObjectId("6374c47ecb468b7a7a68a117"),
-    "annotationUserId": ObjectId("6374c47ecb468b7a7a68a117")
-})
