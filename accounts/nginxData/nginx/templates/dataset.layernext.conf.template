@@ -31,7 +31,7 @@ server{
 
        
         location /sync-tool {
-	        root /home/layerx-sync-tool;
+	        root /home/layernext-sync-tool;
 		add_header Content-disposition "attachment;";
 		proxy_set_header X-Forwarded-Proto https;
         }
