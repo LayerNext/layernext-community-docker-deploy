@@ -37,7 +37,7 @@ services:
       - ./.env
 
   sso_frontend:
-    image: layernextai/sso_frontend_community:1.0.0
+    image: layernextai/sso_frontend_community:1.0.0_local
     restart: always
     ports:
       - "8097:8097"
@@ -45,26 +45,26 @@ services:
       - TZ:utc
       - LAYERNEXT_SUB_DOMAIN=${SETUP_CUSTOMER}
 
-  layernext_nginx:
-    image: nginx
-    restart: always
-    volumes:
-      - ./nginxData/nginx/templates:/etc/nginx/templates
-      - ../dataset/layernext-sync-tool:/home/layernext-sync-tool
-      - ./nginxData/certbot/conf:/etc/letsencrypt
-      - ./nginxData/certbot/www:/var/www/certbot
-    extra_hosts:
-      - "host.docker.internal:host-gateway"
-    ports:
-      - "81:80"
-    environment:
-      - NGINX_PORT=80
-      - SSO_BACKEND_PORT=8888
-      - SSO_FRONTEND_PORT=8097
-      - DATALAKE_BACKEND_PORT=3000
-      - DATALAKE_FRONTEND_PORT=8095
-      - DATASET_BACKEND_PORT=4000
-      - DATASET_FRONTEND_PORT=8098
-      - STUDIO_BACKEND_PORT=8080
-      - STUDIO_FRONTEND_PORT=8096
-      - SETUP_CUSTOMER
+  # layernext_nginx:
+  #   image: nginx
+  #   restart: always
+  #   volumes:
+  #     - ./nginxData/nginx/templates:/etc/nginx/templates
+  #     - ../dataset/layernext-sync-tool:/home/layernext-sync-tool
+  #     - ./nginxData/certbot/conf:/etc/letsencrypt
+  #     - ./nginxData/certbot/www:/var/www/certbot
+  #   extra_hosts:
+  #     - "host.docker.internal:host-gateway"
+  #   ports:
+  #     - "81:80"
+  #   environment:
+  #     - NGINX_PORT=80
+  #     - SSO_BACKEND_PORT=8888
+  #     - SSO_FRONTEND_PORT=8097
+  #     - DATALAKE_BACKEND_PORT=3000
+  #     - DATALAKE_FRONTEND_PORT=8095
+  #     - DATASET_BACKEND_PORT=4000
+  #     - DATASET_FRONTEND_PORT=8098
+  #     - STUDIO_BACKEND_PORT=8080
+  #     - STUDIO_FRONTEND_PORT=8096
+  #     - SETUP_CUSTOMER
