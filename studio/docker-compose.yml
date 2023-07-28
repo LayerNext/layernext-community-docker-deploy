@@ -64,3 +64,4 @@ services:
     environment:
       - TZ:utc
       - LAYERNEXT_SUB_DOMAIN=${SETUP_CUSTOMER}
+      - SERVER_IP=${SERVER_IP}
