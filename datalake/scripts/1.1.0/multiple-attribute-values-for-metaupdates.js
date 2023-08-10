@@ -6,7 +6,7 @@ while (true) {
 
   var dataArr = db.getCollection('MetaDataUpdate').aggregate(
     [
-      { $match: { operationType: 1, operationMode: 1 } },
+      { $match: { operationType: 1} },
       { $sort: { _id: 1 } },
       { $skip: page * size },
       { $limit: size }
