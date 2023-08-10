@@ -43,19 +43,20 @@ while (true) {
         anno['metadata'] = {}
 
         if (anno.label && anno.label.attributeValues) {
+          var _attrs = {}
           for (const attr in anno.label.attributeValues) {
             //print(`${attr}: ${anno.label.attributeValues[attr]}`);
             if (Array.isArray(anno.label.attributeValues[attr])) {
               continue
             } else {
-              anno.label.attributeValues[attr] = [{
+              _attrs[attr] = [{
                 value: anno.label.attributeValues[attr],
                 confidence: confidence,
                 metadata: {}
               }]
             }
-
           }
+          anno.label.attributeValues = _attrs
         }
 
         //print(anno)
