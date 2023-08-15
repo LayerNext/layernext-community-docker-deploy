@@ -4,6 +4,7 @@ The LayerNext Community Version is a free version of the LayerNext platform inte
 
 [License information](https://www.layernext.ai/license-faq)
 
+
 This includes a complete suite of tools such as:
 - Data Lake
 - Annotation Studio
