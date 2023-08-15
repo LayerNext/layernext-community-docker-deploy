@@ -3,6 +3,7 @@
 The LayerNext Community Version is a free version of the LayerNext platform intended for individuals working on smaller, proof of concept projects. It can be self-hosted with a Docker container on your own server.
 
 [License information](https://www.layernext.ai/license-faq)
+
 This includes a complete suite of tools such as:
 - Data Lake
 - Annotation Studio
