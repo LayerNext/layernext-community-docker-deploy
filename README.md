@@ -2,7 +2,7 @@
 
 The LayerNext Community Version is a free version of the LayerNext platform intended for individuals working on smaller, proof of concept projects. It can be self-hosted with a Docker container on your own server.
 
-## License information
+[License information](https://www.layernext.ai/license-faq)
 This includes a complete suite of tools such as:
 - Data Lake
 - Annotation Studio
@@ -36,9 +36,9 @@ Ensure you have a server that meets the following specifications:
 - SSH enabled (TCP port 22)
 
 When creating a VM from a cloud service provider, you typically have the option to enable HTTP and HTTPS. However, you can adjust settings later with documentation by each provider:
-- [EC2 on AWS Cloud](#)
-- [VM on Google Cloud](#)
-- [VM on Azure Cloud](#)
+- [EC2 on AWS Cloud](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/get-set-up-for-amazon-ec2.html)
+- [VM on Google Cloud](https://cloud.google.com/firewall/docs/using-firewalls)
+- [VM on Azure Cloud](https://learn.microsoft.com/en-us/azure/virtual-network/tutorial-filter-network-traffic)
 
 ## Installation Steps
 
